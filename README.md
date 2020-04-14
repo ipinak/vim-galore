@@ -143,7 +143,7 @@
 
 ## Τι είναι το Vim;
 
-Το [Vim](http://www.vim.org) είναι ένας επεξεργαστής κειμένουν με μακριά γραμμή
+Το [Vim](http://www.vim.org) είναι ένας επεξεργαστής κειμένου με μακριά γραμμή
 προγόων ή οποία πηγαίνει μακριά ως το [qed](https://en.wikipedia.org/wiki/QED_(text_editor)).
 [Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) εκδόθηκες το 1991.
 
