@@ -6,8 +6,8 @@
     <a href='https://github.com/wsdjeg/vim-galore-zh_cn'>Chinese</a> |
     <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
     <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
-    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a>
-    <a href='https://github.com/ipinak/vim-galore'>Greek</a> |
+    <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a> |
+    <a href='https://github.com/ipinak/vim-galore'>Greek</a>
     <div>
       <br />
       <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
@@ -16,7 +16,7 @@
   <br /><br />
 </div>
 
-### [Εισαγωγή](#εισαγωγή)
+### [Εισαγωγή](#Εισαγωγή-1)
 
 - [Τι είναι το Vim;](#τι-είναι-το-vim)
 - [Η φιλοσοφία του Vim](#η-φιλοσοφία-του-vim)
@@ -25,7 +25,7 @@
 - [Τι είδους Vim χρησιμοποιώ;](#Τι-είδους-Vim-χρησιμοποιώ)
 - [Σκονάκια](#Σκονάκια)
 
-### [Βασικά](#basics-1)
+### [Βασικά](#Βασικά-1)
 
 - [Ενδιάμεση μνήμη, παράθυρα, καρτέλες](#buffers-windows-tabs)
 - [Ενεργή, φορτωμένη, καταγεγραμμένη, ονομασμένη ενδιάμεση μνήμη](#active-loaded-listed-named-buffers)
@@ -144,7 +144,7 @@
 ## Τι είναι το Vim;
 
 Το [Vim](http://www.vim.org) είναι ένας επεξεργαστής κειμένουν με μακριά γραμμή
-προγόων ή οποία πηγαίνει μακριά ως το [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). 
+προγόων ή οποία πηγαίνει μακριά ως το [qed](https://en.wikipedia.org/wiki/QED_(text_editor)).
 [Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) εκδόθηκες το 1991.
 
 Το έργο φιλοξενείτε διαδικτυακά στο [vim.org](http://www.vim.org/index.php).
@@ -152,16 +152,17 @@
 Απόκτήστε το Vim: χρησιμοποιήστε τον αγαπημένο σας διαχειριστή πακέτων ή επισκευπτείτε
 την [σελίδα κατεβάσματος](http://www.vim.org/download.php) στο vim.org.
 
-Discussions and user questions are best done on the
-[vim_use](https://groups.google.com/forum/#!forum/vim_use) mailing list or using
-IRC ([Freenode](https://freenode.net)) in the `#vim` channel.
+Συζητήσεις και ερωτήσεις χρηστών μπορουν να βρεθούν και να γίνουν στη λίστα
+ηλεκτρονικής αλληλογραφίας [vim_use](https://groups.google.com/forum/#!forum/vim_use)
+ή χρησιμοποιώντας το IRC ([Freenode](https://freenode.net)) στο κανάλι `#vim`.
 
-Development happens on [GitHub](https://github.com/vim/vim), discussions on the
-[vim_dev](https://groups.google.com/forum/#!forum/vim_dev) mailing list.
+Η ανάπτυξη γίνεται στο [GitHub](https://github.com/vim/vim), οι συζητήσεις παίρνουν
+μέρος στην λίστα ηλεκτρονικής αλληλογραφίας
+[vim_dev](https://groups.google.com/forum/#!forum/vim_dev).
 
-Read [Why, oh WHY, do those #?@! nutheads use
-vi?](http://www.viemu.com/a-why-vi-vim.html) to see common misconceptions about
-Vim explained.
+Διάβασε [Γιατί, ω ΓΙΑΤΙ, αυτοί οι #;@! ξεροκέφαλοι χρησιμοποιούν το vi;]
+(http://www.viemu.com/a-why-vi-vim.html) για να δείς να ξεκαθαρίζονται γνωστές
+παρανοήσεις σχετικές με το Vim.
 
 ## Η φιλοσοφία του Vim
 
