@@ -7,6 +7,7 @@
     <a href='http://postd.cc/?s=vim-galore'>Japanese</a> |
     <a href='https://github.com/lsrdg/vim-galore'>Portuguese</a> |
     <a href='http://givi.olnd.ru/vim-galore/vim-galore-ru.html'>Russian</a>
+    <a href='https://github.com/ipinak/vim-galore'>Greek</a> |
     <div>
       <br />
       <sub>Licensed under <a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0<a/>.</sub>
@@ -15,141 +16,141 @@
   <br /><br />
 </div>
 
-### [Intro](#intro-1)
+### [Εισαγωγή](#εισαγωγή)
 
-- [What is Vim?](#what-is-vim)
-- [The Vim Philosophy](#the-vim-philosophy)
-- [First steps](#first-steps)
-- [Minimal vimrc](#minimal-vimrc)
-- [What kind of Vim am I running?](#what-kind-of-vim-am-i-running)
-- [Cheatsheets](#cheatsheets)
+- [Τι είναι το Vim;](#τι-είναι-το-vim)
+- [Η φιλοσοφία του Vim](#η-φιλοσοφία-του-vim)
+- [Τα πρώτα βήματα](#τα-πρώτα-βήματα)
+- [Μινιμαλιστικό vimrc](#Μινιμαλιστικό-vimrc)
+- [Τι είδους Vim χρησιμοποιώ;](#Τι-είδους-Vim-χρησιμοποιώ)
+- [Σκονάκια](#Σκονάκια)
 
-### [Basics](#basics-1)
+### [Βασικά](#basics-1)
 
-- [Buffers, windows, tabs](#buffers-windows-tabs)
-- [Active, loaded, listed, named buffers](#active-loaded-listed-named-buffers)
-- [Argument list](#argument-list)
-- [Mappings](#mappings)
-- [Mapleader](#mapleader)
-- [Registers](#registers)
-- [Ranges](#ranges)
-- [Marks](#marks)
-- [Completion](#completion)
-- [Motions, operators, text objects](#motions-operators-text-objects)
-- [Autocmds](#autocmds)
-- [Changelist, jumplist](#changelist-jumplist)
-- [Undo tree](#undo-tree)
-- [Quickfix and location lists](#quickfix-and-location-lists)
-- [Macros](#macros)
-- [Colorschemes](#colorschemes)
-- [Folding](#folding)
-- [Sessions](#sessions)
-- [Locality](#locality)
+- [Ενδιάμεση μνήμη, παράθυρα, καρτέλες](#buffers-windows-tabs)
+- [Ενεργή, φορτωμένη, καταγεγραμμένη, ονομασμένη ενδιάμεση μνήμη](#active-loaded-listed-named-buffers)
+- [Λίστα παραμέτρων](#argument-list)
+- [Αντιστοίισεις](#mappings)
+- [Αρχηγός αντιστοίχισης](#mapleader)
+- [Καταχωρητές](#registers)
+- [Διαστήματα](#ranges)
+- [Σημάδια](#marks)
+- [Συμπλήρωση](#completion)
+- [Κινήσεις, χειριστές, αντικείμενα κειμένου](#motions-operators-text-objects)
+- [Αυτόματες εντολές](#autocmds)
+- [Λίστες αλλαγών, λίστα αναπήδησης](#changelist-jumplist)
+- [Δέντρο αναίρεσης](#undo-tree)
+- [Γρήγορη διόρθωση και λίστες τοποθεσιών](#quickfix-and-location-lists)
+- [Μακροεντολές](#macros)
+- [Χρωματικοί σχηματισμοί](#colorschemes)
+- [Αναδιπλώσεις](#folding)
+- [Περίοδοι λειτουργίας](#sessions)
+- [Γειτνίαση](#locality)
 
-### [Usage](#usage-1)
+### [Χρήση](#usage-1)
 
-- [Getting help offline](#getting-help-offline)
-- [Getting help offline (alternative)](#getting-help-offline-alternative)
-- [Getting help online](#getting-help-online)
-- [Autocmds in practice](#autocmds-in-practice)
-  - [User events](#user-events)
-  - [Nested autocmds](#nested-autocmds)
-- [Clipboard](#clipboard)
-  - [Clipboard usage (Windows, macOS)](#clipboard-usage-windows-macos)
-  - [Clipboard usage (Linux, BSD, ...)](#clipboard-usage-linux-bsd-)
-- [Restore cursor position when opening file](#restore-cursor-position-when-opening-file)
-- [Temporary files](#temporary-files)
-  - [Backup files](#backup-files)
-  - [Swap files](#swap-files)
-  - [Undo files](#undo-files)
-  - [Viminfo files](#viminfo-files)
-  - [Example configuration for temporary files](#example-configuration-for-temporary-files)
-- [Editing remote files](#editing-remote-files)
-- [Managing plugins](#managing-plugins)
-- [Block insert](#block-insert)
-- [Running external programs and using filters](#running-external-programs-and-using-filters)
+- [Βοήθεια διαδικτυακά](#getting-help-offline)
+- [Βοήθεια εκτός δικτύου (διαφορερικά)](#getting-help-offline-alternative)
+- [Βοήθεια διαδικτυακά](#getting-help-offline)
+- [Αυτόματες εντολές στην πράξη](#autocmds-in-practice)
+  - [Γεγονότα χρηστών](#user-events)
+  - [Εμφωλευμένες αυτόματες εντολές](#nested-autocmds)
+- [Πρόχειρο](#clipboard)
+  - [Χρήση πρόχειρου (Windows, macOS)](#clipboard-usage-windows-macos)
+  - [Χρήση πρόχειρου (Linux, BSD, ...)](#clipboard-usage-linux-bsd-)
+- [Επαναφορά θέσης του κέρσορα κατά το άνοιγμα ενός αρχείου](#restore-cursor-position-when-opening-file)
+- [Προσωρινά αρχεία](#temporary-files)
+  - [Εφεδρικά αρχεία](#backup-files)
+  - [Εννάλλασημα αρχεία](#swap-files)
+  - [Αρχεία επαναφοράς](#undo-files)
+  - [Αρχεία πληροφοριών Vim (Viminfo)](#viminfo-files)
+  - [Παράδειγμα ρυθμίσεων προσωρινών αρχείων](#example-configuration-for-temporary-files)
+- [Επεξεργασία απομακρυσμένων αρχείων](#editing-remote-files)
+- [Διαχείριση προσαρτήσεων](#managing-plugins)
+- [Εισαγωγή μπλοκ](#block-insert)
+- [Εκτέλεση εξωτερικών αρχείων χρησιμοποιώντας φίλτρα](#running-external-programs-and-using-filters)
 - [Cscope](#cscope)
 - [MatchIt](#matchit)
-- [True colors](#true-colors)
+- [Πραγματικά χρώματα](#true-colors)
 
-### [Tips](#tips-1)
+### [Συμβουλές](#tips-1)
 
-- [Go to other end of selected text](#go-to-other-end-of-selected-text)
-- [Saner behavior of n and N](#saner-behavior-of-n-and-n)
-- [Saner command-line history](#saner-command-line-history)
-- [Saner CTRL-L](#saner-ctrl-l)
-- [Disable audible and visual bells](#disable-audible-and-visual-bells)
-- [Quickly move current line](#quickly-move-current-line)
-- [Quickly add empty lines](#quickly-add-empty-lines)
-- [Quickly edit your macros](#quickly-edit-your-macros)
-- [Quickly jump to header or source file](#quickly-jump-to-header-or-source-file)
-- [Quickly change font size in GUI](#quickly-change-font-size-in-gui)
-- [Change cursor style dependent on mode](#change-cursor-style-dependent-on-mode)
-- [Don't lose selection when shifting sidewards](#dont-lose-selection-when-shifting-sidewards)
-- [Reload a file on saving](#reload-a-file-on-saving)
-- [Smarter cursorline](#smarter-cursorline)
-- [Faster keyword completion](#faster-keyword-completion)
-- [Cosmetic changes to colorschemes](#cosmetic-changes-to-colorschemes)
+- [Πήγαινε στο άλλο ακρο του επιλεγμένου αρχείου](#go-to-other-end-of-selected-text)
+- [Υγιής συμπεριφορά του n και N](#saner-behavior-of-n-and-n)
+- [Υγιές ιστορία της γραμμής εντολών](#saner-command-line-history)
+- [Υγιές χρήση CTRL-L](#saner-ctrl-l)
+- [Απενεργοποίση ηχητικών και εικονικών καμπανών](#disable-audible-and-visual-bells)
+- [Γρήγορη μετακίνηση στην τρέχων γραμμή](#quickly-move-current-line)
+- [Γρήγορη προσθήκη άδειων γραμμών](#quickly-add-empty-lines)
+- [Γρήγορη επεξεργασία των μακροεντολών](#quickly-edit-your-macros)
+- [Γρήγορη αναπήδηση στην κεφαλίδα του αρχείου](#quickly-jump-to-header-or-source-file)
+- [Γρήγορη αλλαγή του μεγέθους της γραμματοσειρά σε γραφικό περιβάλλον](#quickly-change-font-size-in-gui)
+- [Αλλαγή του τύπου του κέρσορα ανάλογα με την λειτουργία](#change-cursor-style-dependent-on-mode)
+- [Μην χάνεις την επιλογή καθώς μετακινήσε πλαγίως](#dont-lose-selection-when-shifting-sidewards)
+- [Επαναφόρτωση ενός αρχείου κατά την αποθήκευση του](#reload-a-file-on-saving)
+- [Εξυπνότερη γραμμή κέρσορα](#smarter-cursorline)
+- [Ταχύτερη συμπλήρωση λέξεων κλειδίc](#faster-keyword-completion)
+- [Κοσμητικές αλλαγές χρωματικών σχηματισμών](#cosmetic-changes-to-colorschemes)
 
 ### [Commands](#commands-1)
 
-- [:global and :vglobal](#global-and-vglobal) - Execute a command on all matching lines.
-- [:normal and :execute](#normal-and-execute) - The scripting dream team.
-- [:redir and execute()](#redir-and-execute) - Capture command output.
+- [:global και :vglobal](#global-and-vglobal) - Εκτελέστε μια εντολή σε όλες της αντίστοιχες γραμμές.
+- [:normal και :execute](#normal-and-execute) - Η ονειρική ομάδα του δέσμενω εντολών (scripting).
+- [:redir και execute()](#redir-and-execute) - Αιχμαλωτήστε την έξοδο εντολών.
 
-### [Debugging](#debugging-1)
+### [Αποσφαλμάτωση](#debugging-1)
 
-- [General tips](#general-tips)
-- [Verbosity](#verbosity)
-- [Profiling startup time](#profiling-startup-time)
-- [Profiling at runtime](#profiling-at-runtime)
-- [Debugging Vim scripts](#debugging-vim-scripts)
-- [Debugging syntax files](#debugging-syntax-files)
+- [Γενικές συμβουλές](#general-tips)
+- [Λεπτομέρεια](#verbosity)
+- [Σκιαγράφηση (profiling) χρόνου έναρξης](#profiling-startup-time)
+- [Σκιαγράφηση περιβάλλοντος εκτέλεσης](#profiling-at-runtime)
+- [Απασφαλμάτωση δέσμεων εντολών Vim](#debugging-vim-scripts)
+- [Απασφαλμάτωση αρχείων σύνταξης](#debugging-syntax-files)
 
-### [Miscellaneous](#miscellaneous-1)
+### [Επί μέρους](#miscellaneous-1)
 
-- [Additional resources](#additional-resources)
-- [Vim distributions](#vim-distributions)
-- [Standard plugins](#standard-plugins)
-- [Map CapsLock to Control](#map-capslock-to-control)
-- [Generating HTML from buffer](#generating-html-from-buffer)
-- [Easter eggs](#easter-eggs)
-- [Why hjkl for navigation?](#why-hjkl-for-navigation)
+- [Πρόσθετες πηγές](#additional-resources)
+- [Διανομές Vim](#vim-distributions)
+- [Καθιερωμένες προσαρτύσεις](#standard-plugins)
+- [Αντοίχιση του CapsLock σε Control](#map-capslock-to-control)
+- [Παραγωγή HTML από ενδιάμεση μνήμη](#generating-html-from-buffer)
+- [Εκπλήξεις (easter eggs)](#easter-eggs)
+- [Γιατί hjkl για πλοήγηση;](#why-hjkl-for-navigation)
 
-### [Common problems](#common-problems-1)
+### [Συχνά προβλήματα](#common-problems-1)
 
-- [Editing small files is slow](#editing-small-files-is-slow)
-- [Editing huge files is slow](#editing-huge-files-is-slow)
-- [Bracketed paste (or why do I have to set 'paste' all the time?)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
-- [Delays when using escape key in terminal](#delays-when-using-escape-key-in-terminal)
-- [Function search undo](#function-search-undo)
+- [Η επεξεργασία μικρών αρχείων ειναι αργή](#editing-small-files-is-slow)
+- [Η επεξεργασία τεράστιων αρχείων ειναι αργή](#editing-huge-files-is-slow)
+- [Παρενθετική επικόλληση (ή γιατί πρέπει να θέτω 'paster' κάθε φορά;)](#bracketed-paste-or-why-do-i-have-to-set-paste-all-the-time)
+- [Καθυστερήσεις όταν χρησημοποιείτε το escape σε τερματικό](#delays-when-using-escape-key-in-terminal)
+- [Λειτουργία επαναφοράς στην αναζήτηση](#function-search-undo)
 
-### [Technical quirks](#technical-quirks-1)
+### [Τεχνικές ιδιοτροπίες](#technical-quirks-1)
 
-- [Newline used for NUL](#newline-used-for-nul)
+- [Χρήση νέας γραμμαή για NUL](#newline-used-for-nul)
 
-### [Terminology](#terminology-1)
+### [Ορολογία](#terminology-1)
 
-- [Vim script? Vimscript? VimL?](#vim-script-vimscript-viml)
+- [Δέσμη εντολών Vim; Vimscript; VimL;](#vim-script-vimscript-viml)
 
-### [List of colorschemes](PLUGINS.md#colorschemes-1)
+### [Λίστα χρωματικών σχηματισμών](PLUGINS.md#colorschemes-1)
 
-### [List of plugins](PLUGINS.md)
+### [Λίστα προσαρτύσεων](PLUGINS.md)
 
 <br>
 
-# Intro
+# Εισαγωγή
 
-## What is Vim?
+## Τι είναι το Vim;
 
-[Vim](http://www.vim.org) is a text editor with a long line of ancestors that
-goes back to [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). [Bram
-Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) released it in 1991.
+Το [Vim](http://www.vim.org) είναι ένας επεξεργαστής κειμένουν με μακριά γραμμή
+προγόων ή οποία πηγαίνει μακριά ως το [qed](https://en.wikipedia.org/wiki/QED_(text_editor)). 
+[Bram Moolenaar](https://en.wikipedia.org/wiki/Bram_Moolenaar) εκδόθηκες το 1991.
 
-The project is hosted online at [vim.org](http://www.vim.org/index.php).
+Το έργο φιλοξενείτε διαδικτυακά στο [vim.org](http://www.vim.org/index.php).
 
-Getting Vim: Use your favourite package manager or visit the [download
-page](http://www.vim.org/download.php) from vim.org.
+Απόκτήστε το Vim: χρησιμοποιήστε τον αγαπημένο σας διαχειριστή πακέτων ή επισκευπτείτε
+την [σελίδα κατεβάσματος](http://www.vim.org/download.php) στο vim.org.
 
 Discussions and user questions are best done on the
 [vim_use](https://groups.google.com/forum/#!forum/vim_use) mailing list or using
@@ -162,7 +163,7 @@ Read [Why, oh WHY, do those #?@! nutheads use
 vi?](http://www.viemu.com/a-why-vi-vim.html) to see common misconceptions about
 Vim explained.
 
-## The Vim Philosophy
+## Η φιλοσοφία του Vim
 
 Vim adheres to the modal editing philosophy. This means that it provides
 multiple modes and the meaning of keys changes according to the mode. You
@@ -188,7 +189,7 @@ over already. This reduces [cognitive
 load](https://en.wikipedia.org/wiki/Cognitive_load) and helps to focus on the
 actual task.
 
-## First steps
+## Τα πρώτα βήματα
 
 Vim comes bundled with an interactive tutorial that teaches the most basic
 things you need to know about. You can start it from the shell:
@@ -224,7 +225,7 @@ One last advice: Please learn how to use Vim properly before starting to add all
 kinds of hyped [plugins](#managing-plugins) that only implement features that
 Vim already supports natively.
 
-## Minimal vimrc
+## Μινιμαλιστικό vimrc
 
 The user vimrc can be put into `~/.vimrc` or for the sake of better separation
 into `~/.vim/vimrc`. The latter makes it easy to put the entire configuration
@@ -247,7 +248,7 @@ vimrc on GitHub (often in a repository called "vim-config" or "dotfiles"), so
 whenever you find a plugin you like, look up its maintainer's GitHub page and
 look through the repositories.
 
-## What kind of Vim am I running?
+## Τι είδους Vim χρησιμοποιώ;
 
 Looking at `:version` will give you all the information you need to know about
 how the currently running Vim binary was compiled.
@@ -293,7 +294,7 @@ Help:
 :h has-patch
 ```
 
-## Cheatsheets
+## Σκονάκια
 
 - http://people.csail.mit.edu/vgod/vim/vim-cheat-sheet-en.png
 - https://cdn.shopify.com/s/files/1/0165/4168/files/preview.png
@@ -302,7 +303,7 @@ Help:
 
 Or quickly open a cheatsheet from within Vim: [vim-cheat40](https://github.com/lifepillar/vim-cheat40).
 
-# Basics
+# Βασικά
 
 ## Buffers, windows, tabs
 
